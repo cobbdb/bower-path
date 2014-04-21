@@ -1,4 +1,4 @@
-# bower-path
+# bower-path [![NPM version](https://badge.fury.io/js/bower-path.svg)](http://badge.fury.io/js/bower-path)
 
 Quickly resolve the main path of a Bower component.
 

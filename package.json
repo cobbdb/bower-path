@@ -1,6 +1,6 @@
 {
   "name": "bower-path",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quickly resolve the main path of a Bower component.",
   "main": "bower-path.js",
   "scripts": {

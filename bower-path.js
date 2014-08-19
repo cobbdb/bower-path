@@ -16,5 +16,6 @@ module.exports = function (pkg) {
     path += '/' + pkg + '/';
     var config = fs.readFileSync(path + '.bower.json', 'utf8');
     var main = JSON.parse(config).main;
-    return path + main;
+    if( main === 'undefined' || main === null ) return false;
+    else return path + main;
 };

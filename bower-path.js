@@ -14,7 +14,11 @@ module.exports = function (pkg) {
     }
 
     path += '/' + pkg + '/';
-    var config = fs.readFileSync(path + '.bower.json', 'utf8');
-    var main = JSON.parse(config).main;
-    return path + main;
+    try {
+      var config = fs.readFileSync(path + '.bower.json', 'utf8');
+      var main = JSON.parse(config).main;
+      return path + main;
+    } catch (err) {
+      return false;
+    }
 };
